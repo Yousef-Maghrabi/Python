@@ -109,4 +109,58 @@ print("\n\n")
 nums = list(range(51, 101, 2)) # list from 50 to 100
 
 print(nums)
-print("\n\n")  
+print("\n\n")   
+
+# --- #################  
+
+# --- Methods
+# --- 1. Add Items: append(), insert(), extend() 
+
+
+# --- Append: Adds an item at the end of a list 
+print("# -------------- #")
+print("# -------------- #")
+print("# -------------- #")
+print("# -------------- #")
+
+my_animals = ["goat", "sheep", "cow"] 
+pet_animals_new = ["dog", "cat"] 
+print(my_animals) 
+print(pet_animals_new) 
+farm_animal_new = "horse" 
+my_animals.append(farm_animal_new) 
+my_animals += pet_animals_new 
+print(my_animals)  
+print("\n\n") 
+ 
+# --- Insert: Adds an item at a specified index 
+
+favourite_subjects = ["Mathematics", "Language", "English"] 
+second_favourite = "Science" 
+favourite_subjects.insert(1, second_favourite)
+print(favourite_subjects) 
+print("\n\n") 
+
+# --- Extend: Adds Items in a list or any Iterable 
+
+food = ["Duck", "Rice", "Beef Soup", "Pigeon"]
+food.extend({"Fries": "Fried", "Shawerma": "Grilled"})  
+print(food)
+print("\n\n") 
+ 
+print("# -------------- #")
+print("# -------------- #")
+print("# -------------- #")
+print("# -------------- #")
+# 2. Remove Items: pop(), del, remove(), clear() 
+
+# --- pop(): Removes an item at a specified position 
+
+nums = [1, 2, 3, 4, 5] 
+nums.pop() # no params => removes the last index 
+print(nums)  
+nums.pop(2) 
+print(nums) # with params = removed the added index 
+
+
+# 1. Add Items: append(), insert(), extend()
