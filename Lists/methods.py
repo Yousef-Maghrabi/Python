@@ -154,13 +154,85 @@ print("# -------------- #")
 print("# -------------- #")
 # 2. Remove Items: pop(), del, remove(), clear() 
 
-# --- pop(): Removes an item at a specified position 
+# --- pop(): Takes an item at a specified position or the last index away and returns it
 
 nums = [1, 2, 3, 4, 5] 
 nums.pop() # no params => removes the last index 
 print(nums)  
 nums.pop(2) 
 print(nums) # with params = removed the added index 
+print("\n\n") 
+
+# --- del: Removes an item at a specified or the whole list  
+
+upcoming_levels = [1, 2, 3, 4] 
+print(upcoming_levels)   
+del upcoming_levels[0] 
+print(upcoming_levels)
+print("\n\n") 
+
+# --- remove(): Removes an item [first occurence] with a specified value in a list
+
+movies = ["Godfather", "Spiderman", "Wonderwoman"]
+print(movies) 
+print(movies.remove("Spiderman")) # None 
+print(movies)
+print("\n\n") 
+
+# --- clear(): Clears a list
+
+print(movies.clear()) # None 
+print(movies)
+print("\n\n") 
 
 
-# 1. Add Items: append(), insert(), extend()
+# 3. Copy Items: copy() 
+
+nums = [1, 2, 3, 4] 
+nums_copy = nums.copy() 
+print(nums) 
+print(nums_copy)
+print("\n\n") 
+
+# 3. Sort Items: sort()
+
+nums = [4, 1, 3, 2, 6, 5] 
+nums.sort() 
+print(nums)  
+# reverse 
+nums.sort(reverse=True) 
+print(nums)
+print("\n\n") 
+
+# 3. Sort Items: sort()
+
+nums = [4, 1, 3, 2, 6, 5] 
+nums.sort() 
+print(nums)  
+# reverse 
+nums.sort(reverse=True) 
+print(nums)
+print("\n\n") 
+
+# 3. Count number of Items: count()
+
+plist = []
+paragraph = "Mr Magdy Yaacoup is a Magnificant Surgeon"
+for i in paragraph.lower(): plist.append(i) 
+print(paragraph)
+print(f"A is repeated {plist.count("a")} times.")
+print("\n\n") 
+
+# 4. Return the index of the first occurence of an item : index()
+
+loved_langs = ["Python", "Java", "Go", "Python", "JavaScript", "Rust", "Python", "Rust", "Java", "Python", "Python", "Go"]
+print(loved_langs.index("Python"))
+print("\n\n") 
+
+# 5. Reverses the order of the list : reverse()
+
+orders = ["934", "32479", "38723", "8932", "3479"]  
+orders.reverse()
+for i in orders: 
+    print(f"\tOrder number {orders.index(i)+1}: {i}")
+print("\n\n") 
